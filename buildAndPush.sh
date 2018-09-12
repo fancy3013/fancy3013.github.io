@@ -5,7 +5,7 @@ source_dir=$base\static
 target_dir=D:\tmp\ddd
 echo "!!! Will be deleted $target_dir and copy $source_dir to $target_dir !!!"
 
-npm run build && echo "success"
+npm run build & echo "success"
 cd $target_dir
 rm -rf $target_dir\*
 cp -r $source_dir\* $target_dir
